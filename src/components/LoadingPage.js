@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Text, View, StyleSheet, Button, ImageBackground } from "react-native";
 import LogoImage from "./LogoImage";
 
-const LoadingPage = () => {
+const LoadingPage = ({ navigation }) => {
+  // console.log(navigation);
+  useEffect(() => {
+    setTimeout(() => navigation.navigate("Welcome"), 2500);
+  });
+  // navigation.navigate("Welcome");
+  // setTimeout(navigateToNext, 2000);
   return (
     <View style={{ flex: 1 }}>
       <ImageBackground

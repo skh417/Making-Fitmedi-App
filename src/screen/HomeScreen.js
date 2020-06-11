@@ -34,7 +34,7 @@ const HomeScreen = ({ navigation }) => {
           title='만들고 있는 페이지'
           onPress={() => {
             navigation.navigate("Welcome");
-            console.log(navigation);
+            // console.log(navigation);
           }}
         />
         <LoginButtons navi={navigation.navigate} />
